@@ -1,0 +1,51 @@
+﻿<RibbonWindow x:Class="Syntra.VDOAP.CProef.Ecommerce2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"       
+        xmlns:local="clr-namespace:Ecommerce2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Closing="MainScreen_Closing">
+    <Grid x:Name="gridNavigation">
+        <Ribbon x:Name="MainRibbon" VerticalAlignment="Top" SelectedIndex="0">
+            <Ribbon.HelpPaneContent>
+                <RibbonButton SmallImageSource="Resources/Icons/info.png"></RibbonButton>
+            </Ribbon.HelpPaneContent>
+            <Ribbon.QuickAccessToolBar>
+                <RibbonQuickAccessToolBar>
+                    <RibbonButton x:Name="Save" SmallImageSource="Resources/Icons/diskette.png"></RibbonButton>
+                    <RibbonSplitButton x:Name="undo" SmallImageSource="Resources/Icons/undo.png">
+                        <RibbonSplitMenuItem Header="Undo 1" />
+                        <RibbonSplitMenuItem Header="Undo 2" />
+                        <RibbonSplitMenuItem Header="Undo 3" />
+                    </RibbonSplitButton>
+                    <RibbonSplitButton x:Name="Redo" SmallImageSource="Resources/Icons/redo.png">
+                        <RibbonSplitMenuItem Header="Redo 1" />
+                        <RibbonSplitMenuItem Header="Redo 2" />
+                    </RibbonSplitButton>
+                </RibbonQuickAccessToolBar>
+            </Ribbon.QuickAccessToolBar>
+            <Ribbon.ApplicationMenu>
+                <RibbonApplicationMenu KeyTip="F">
+                    <RibbonApplicationMenuItem x:Name="RamiManageCurrentAccount" Header="My Account" ImageSource="Resources/Icons/User.png"></RibbonApplicationMenuItem>
+                    <RibbonApplicationMenuItem x:Name="ramiExit" Header="Exit" Click="ramiExit_Click" ImageSource="Resources/Icons/sign-out-option.png"></RibbonApplicationMenuItem>
+                </RibbonApplicationMenu>
+            </Ribbon.ApplicationMenu>
+            <RibbonTab Header="Home" KeyTip="H">
+                <RibbonGroup x:Name="grpProducts" Header="Products">
+                    <RibbonButton x:Name="btnProductOverview" Label="Product overview" Click="btnProductOverview_Click" SmallImageSource="Resources/Icons/film.png"></RibbonButton>
+                    <RibbonButton x:Name="btnProductAdd" Label="Add new Product" Click="btnProductAdd_Click" SmallImageSource="Resources/Icons/plus-button.png"></RibbonButton>
+                </RibbonGroup>
+                <RibbonGroup x:Name="grpSuppliers" Header="Suppliers">
+                    <RibbonButton x:Name="btnSupplierOverview" Label="Supplier overview" Click="btnSupplierOverview_Click"></RibbonButton>
+                    <RibbonButton x:Name="btnSupplierAdd" Label="Add new supplier" Click="btnSupplierAdd_Click"></RibbonButton>
+                </RibbonGroup>
+                <RibbonGroup x:Name="grpProductCategories" Header="Product categories">
+                    <RibbonButton x:Name="btnCategoryOverview" Label="Category overview" Click="btnCategoryOverview_Click"></RibbonButton>
+                    <RibbonButton x:Name="btnCategoryAdd" Label="Add new Category" Click="btnCategoryAdd_Click"></RibbonButton>
+                </RibbonGroup>
+            </RibbonTab>
+        </Ribbon>
+        <ContentControl x:Name="mainContent" Margin="10,150,10,10"></ContentControl>
+    </Grid>
+</RibbonWindow>
