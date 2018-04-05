@@ -28,7 +28,9 @@ namespace Syntra.VDOAP.CProef.Ecommerce.LIB.Entities
         public string LocalName { get; set; }
 
         public virtual ICollection<Localize_ProductCategory> Localize_ProductCategories { get; set; }
-               
+        public virtual ICollection<Localize_Product> Localize_Product { get; set; }
+
+
         public override bool IsNew()
         {
             throw new NotImplementedException();

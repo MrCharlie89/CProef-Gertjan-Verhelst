@@ -109,6 +109,10 @@
     <Compile Include="Migrations\201804051326504_Ecommerce6.Designer.cs">
       <DependentUpon>201804051326504_Ecommerce6.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804051759111_changesLocalizeProduct.cs" />
+    <Compile Include="Migrations\201804051759111_changesLocalizeProduct.Designer.cs">
+      <DependentUpon>201804051759111_changesLocalizeProduct.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -143,6 +147,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201804051326504_Ecommerce6.resx">
       <DependentUpon>201804051326504_Ecommerce6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804051759111_changesLocalizeProduct.resx">
+      <DependentUpon>201804051759111_changesLocalizeProduct.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

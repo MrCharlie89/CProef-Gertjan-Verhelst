@@ -47,6 +47,8 @@ namespace Syntra.VDOAP.CProef.Ecommerce.LIB.Entities
 
         public ProductCategory ProductCategory { get; set; }
 
+        public virtual ICollection<Localize_Product> Localize_Product { get; set; }
+
 
         public override bool IsNew()
         {
