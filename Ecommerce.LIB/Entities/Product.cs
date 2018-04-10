@@ -23,11 +23,6 @@ namespace Syntra.VDOAP.CProef.Ecommerce.LIB.Entities
         [Required(ErrorMessage = "The product code is required.")]
         public string ProductCode { get; set; }
 
-        [Column("ean_barcode")]
-        [StringLength(25, ErrorMessage = "The EAN barcode can maximum have 25 characters.")]
-        public string EANBarcode { get; set; }
-                    
-
         [Column("unit_price")]
         [Required(ErrorMessage = "Price is required")]
         [Range(0.00, 999999999, ErrorMessage = "Price must be greater than 0,00")]
@@ -35,15 +30,19 @@ namespace Syntra.VDOAP.CProef.Ecommerce.LIB.Entities
         [DisplayFormat(DataFormatString = "{0:0,0}")]
         public decimal UnitPrice { get; set; }
 
-        [Column("price_type_id")]
-        public int? PriceByTypeId { get; set; }
+        [Column("Current_Stock")]
+        [Required(ErrorMessage = "the current stock is required")]        
+        public int CurrentStock { get; set; }
 
         // [ForeignKey("PriceByTypeId")]
         //  public virtual UnitPriceType PriceByType { get; set; }
 
         [Column("is_active")]
         [DisplayName("Is active?")]
+        [Required(ErrorMessage = "The is active is required")]
         public bool IsActive { get; set; }
+
+
 
         public ProductCategory ProductCategory { get; set; }
 

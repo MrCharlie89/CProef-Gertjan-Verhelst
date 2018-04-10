@@ -156,5 +156,33 @@ namespace Syntra.VDOAP.CProef.Ecommerce2
                 throw;
             }
         }
+
+        private void btnLanguageOverview_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                SetTitleByRibbonButton(sender);
+                mainContent.Content = new LanguageOverview();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        private void btnLanguageAdd_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                SetTitleByRibbonButton(sender);
+                mainContent.Content = new LanguageForm();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
     }
 }

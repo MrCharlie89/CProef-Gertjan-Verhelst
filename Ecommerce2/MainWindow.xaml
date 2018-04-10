@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"       
         xmlns:local="clr-namespace:Ecommerce2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" Closing="MainScreen_Closing">
+        Title="MainWindow" Height="450" Width="800" Closing="MainScreen_Closing" WindowStartupLocation="CenterScreen" WindowState="Maximized">
     <Grid x:Name="gridNavigation">
         <Ribbon x:Name="MainRibbon" VerticalAlignment="Top" SelectedIndex="0">
             <Ribbon.HelpPaneContent>
@@ -36,13 +36,20 @@
                     <RibbonButton x:Name="btnProductOverview" Label="Product overview" Click="btnProductOverview_Click" SmallImageSource="Resources/Icons/film.png"></RibbonButton>
                     <RibbonButton x:Name="btnProductAdd" Label="Add new Product" Click="btnProductAdd_Click" SmallImageSource="Resources/Icons/plus-button.png"></RibbonButton>
                 </RibbonGroup>
+                
+                <RibbonGroup x:Name="grpProductCategories" Header="Product categories">
+                    <RibbonButton x:Name="btnCategoryOverview" Label="Category overview" Click="btnCategoryOverview_Click"></RibbonButton>
+                    <RibbonButton x:Name="btnCategoryAdd" Label="Add new Category" Click="btnCategoryAdd_Click"></RibbonButton>
+                </RibbonGroup>
+                
                 <RibbonGroup x:Name="grpSuppliers" Header="Suppliers">
                     <RibbonButton x:Name="btnSupplierOverview" Label="Supplier overview" Click="btnSupplierOverview_Click"></RibbonButton>
                     <RibbonButton x:Name="btnSupplierAdd" Label="Add new supplier" Click="btnSupplierAdd_Click"></RibbonButton>
                 </RibbonGroup>
-                <RibbonGroup x:Name="grpProductCategories" Header="Product categories">
-                    <RibbonButton x:Name="btnCategoryOverview" Label="Category overview" Click="btnCategoryOverview_Click"></RibbonButton>
-                    <RibbonButton x:Name="btnCategoryAdd" Label="Add new Category" Click="btnCategoryAdd_Click"></RibbonButton>
+
+                <RibbonGroup x:Name="grpLanguage" Header="Language">
+                    <RibbonButton x:Name="btnLanguageOverview" Label="Language overview" Click="btnLanguageOverview_Click"></RibbonButton>
+                    <RibbonButton x:Name="btnLanguageAdd" Label="Add new Language" Click="btnLanguageAdd_Click"></RibbonButton>
                 </RibbonGroup>
             </RibbonTab>
         </Ribbon>

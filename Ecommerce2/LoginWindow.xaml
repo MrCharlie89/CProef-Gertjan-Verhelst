@@ -10,9 +10,9 @@
     <Grid>
         <Image x:Name="imgCookItUp" Source="Resources/Images/homepage_cookitup.png" Margin="10,5,10,390"></Image>
         <Label x:Name="lblUserName" Content="Username:" HorizontalAlignment="Left" FontSize="18" Margin="44,153,0,158"></Label>
-        <TextBox x:Name="txtUserName" TextWrapping="Wrap" Text="" Margin="148,153,73,313" FontSize="18" KeyUp="txtUserName_KeyUp" VerticalContentAlignment="Stretch"></TextBox>
+        <TextBox x:Name="txtUserName" TextWrapping="Wrap" Text="" Margin="148,153,73,313" FontSize="18" KeyUp="txtUserName_KeyUp" VerticalContentAlignment="Center"></TextBox>
         <Label x:Name="lblPassword" Content="Password:" HorizontalAlignment="Left" FontSize="18" Margin="55,239,0,76"></Label>
-        <PasswordBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="148,239,0,221" Width="429" KeyUp="txtPassword_KeyUp" PasswordChanged="txtPassword_PasswordChanged" FontSize="18" VerticalContentAlignment="Stretch"></PasswordBox>
+        <PasswordBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="148,239,0,221" Width="429" VerticalContentAlignment="Center" KeyUp="txtPassword_KeyUp" PasswordChanged="txtPassword_PasswordChanged" FontSize="18" ></PasswordBox>
         <Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" Margin="350,438,0,20" Width="105" BorderBrush="White" FontSize="18" Click="btnCancel_Click"></Button>
         <Button x:Name="btnLogin" Content="Login" HorizontalAlignment="Left" Margin="471,438,0,20" Width="131" BorderBrush="White" FontSize="18" Click="btnLogin_Click"></Button>
         <Label x:Name="errUserName" HorizontalAlignment="Left" Margin="148,198,0,272" Width="455" Foreground="Red"></Label>

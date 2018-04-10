@@ -6,8 +6,55 @@
              xmlns:local="clr-namespace:Syntra.VDOAP.CProef.Ecommerce2"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800" Background="White">
-    <Grid Height="522" Width="773">
-        <Label x:Name="Title" Content="Add new supplier" Margin="0,0,648,491"></Label>
-            
+    <Grid Grid.IsSharedSizeScope="True" Margin="0,0,0,0" >
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <StackPanel Background="White" HorizontalAlignment="Center">
+                <Label x:Name="Title" Content=" Add new supplier" HorizontalAlignment="Center"/>
+
+                <WrapPanel Background="White" VerticalAlignment="Top" HorizontalAlignment="Center">
+                    <Grid HorizontalAlignment="Center">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel Grid.Column="0" HorizontalAlignment="Stretch">
+                            <Label x:Name="SupplierName" Content="Supplier name: " Height="30" HorizontalContentAlignment="Right" Margin="0,5,0,5"></Label>
+                            <Label x:Name="SupplierAdress" Content="Streetname and number: " Height="30" HorizontalContentAlignment="Right" Margin="0,5,0,5"></Label>
+                            <Label x:Name="SupplierCity" Content="City: " Height="30" HorizontalContentAlignment="Right" Margin="0,5,0,5"></Label>
+                            <Label x:Name="SupplierPostalCode" Content="Postalcode: " Height="30" HorizontalContentAlignment="Right" Margin="0,5,0,5"></Label>
+                            <Label x:Name="SupplierTelephone" Content="Telephone number: " Height="30" HorizontalContentAlignment="Right" Margin="0,5,0,5"></Label>
+                            <Label x:Name="SupplierWebsite" Content="Website: " Height="30" HorizontalContentAlignment="Right" Margin="0,5,0,5"></Label>
+                            <Label x:Name="SupplierEmail" Content="Emailadress: " Height="30" HorizontalContentAlignment="Right" Margin="0,5,0,5"></Label>
+                            <Label x:Name="SupplierVAT" Content="VAT number: " Height="30" HorizontalContentAlignment="Right" Margin="0,5,0,5"></Label>
+                            <Label x:Name="SupplierContactPerson" Content="Name Contact: " Height="30" HorizontalContentAlignment="Right" Margin="0,5,0,5"></Label>
+                            <Label x:Name="SupplierContactPersonTelephone" Content="Contact telephone number: " Height="30" HorizontalContentAlignment="Right" Margin="0,5,0,5"></Label>
+                            <Label x:Name="SupplierContactPersonEmailAdress" Content="Contact emailadress: " Height="30" HorizontalContentAlignment="Right" Margin="0,5,0,5"></Label>
+                            
+                        </StackPanel>
+
+                        <StackPanel Grid.Column="1">
+                            <TextBox HorizontalAlignment="Right" Width="200" Height="30" VerticalContentAlignment="Center" Margin="0,5,0,5"></TextBox>
+                            <TextBox HorizontalAlignment="Right" Width="200" Height="30" VerticalContentAlignment="Center" Margin="0,5,0,5"></TextBox>
+                            <TextBox HorizontalAlignment="Right" Width="200" Height="30" VerticalContentAlignment="Center" Margin="0,5,0,5"></TextBox>
+                            <TextBox HorizontalAlignment="Right" Width="200" Height="30" VerticalContentAlignment="Center" Margin="0,5,0,5"></TextBox>
+                            <TextBox HorizontalAlignment="Right" Width="200" Height="30" VerticalContentAlignment="Center" Margin="0,5,0,5"></TextBox>
+                            <TextBox HorizontalAlignment="Right" Width="200" Height="30" VerticalContentAlignment="Center" Margin="0,5,0,5"></TextBox>
+                            <TextBox HorizontalAlignment="Right" Width="200" Height="30" VerticalContentAlignment="Center" Margin="0,5,0,5"></TextBox>
+                            <TextBox HorizontalAlignment="Right" Width="200" Height="30" VerticalContentAlignment="Center" Margin="0,5,0,5"></TextBox>
+                            <TextBox HorizontalAlignment="Right" Width="200" Height="30" VerticalContentAlignment="Center" Margin="0,5,0,5"></TextBox>
+                            <TextBox HorizontalAlignment="Right" Width="200" Height="30" VerticalContentAlignment="Center" Margin="0,5,0,5"></TextBox>
+                            <TextBox HorizontalAlignment="Right" Width="200" Height="30" VerticalContentAlignment="Center" Margin="0,5,0,5"></TextBox>
+                        </StackPanel>
+                        
+
+
+                    </Grid>
+
+                </WrapPanel>
+
+            </StackPanel>
+
+        </ScrollViewer>
     </Grid>
 </UserControl>

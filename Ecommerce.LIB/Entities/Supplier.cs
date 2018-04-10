@@ -27,16 +27,17 @@ namespace Syntra.VDOAP.CProef.Ecommerce.LIB.Entities
         [Required(ErrorMessage = "The name is required.")]
         public string Suppliername { get; set; }
 
+        [Column("streetname_and_number")]        
+        [Required(ErrorMessage = "the streetname and number is required")]
+        public string StreetnameAndNumber { get; set; }
 
-        [Column("adress")]
-        [StringLength(255, ErrorMessage = "the adress can maximum have 255 characters.")]
-        [Required(ErrorMessage = "the adress is required")]
-        public string Adress { get; set; }
-
-        //[Column("streetname")]
-        //[StringLength(255, ErrorMessage = "The streetname can maximum have 255 characters.")]
-        //[Required(ErrorMessage = "The adress is required.")]
-        //public string Streetname { get; set; }
+        [Column("city")]
+        [Required(ErrorMessage =" the city name is required")]
+        public string City { get; set; }
+       
+        [Column("postalcode")]
+        [Required(ErrorMessage = "the Postalcode is required")]
+        public string Postalcode { get; set; }
 
         [Column("phonenumber")]
         [StringLength(15, ErrorMessage = "The maximumlength of a phonenumber is 15 characters")]
@@ -46,6 +47,15 @@ namespace Syntra.VDOAP.CProef.Ecommerce.LIB.Entities
         [Column("emailadress")]
         [Required(ErrorMessage = "An emailadress is required")]
         public string Emailadress { get; set; }
+
+        [Column("name_contact")]
+        public string NameContact { get; set; }
+
+        [Column("contact_telephone_number")]
+        public string ContactTelephoneNumber { get; set; }
+
+        [Column("emailadress_contact")]
+        public string EmailadressContact { get; set; }
 
 
 

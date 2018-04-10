@@ -73,6 +73,12 @@
     <Compile Include="CategoryOverview.xaml.cs">
       <DependentUpon>CategoryOverview.xaml</DependentUpon>
     </Compile>
+    <Compile Include="LanguageForm.xaml.cs">
+      <DependentUpon>LanguageForm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LanguageOverview.xaml.cs">
+      <DependentUpon>LanguageOverview.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SupplierForm.xaml.cs">
       <DependentUpon>SupplierForm.xaml</DependentUpon>
     </Compile>
@@ -84,6 +90,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="CategoryOverview.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LanguageForm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LanguageOverview.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

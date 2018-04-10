@@ -24,8 +24,7 @@ namespace Syntra.VDOAP.CProef.Ecommerce.LIB.Entities
         public string ProductName { get; set; }
 
         [Column("descr")]
-        public string Description { get; set; }
-       
+        public string Description { get; set; }       
 
         [Column("color")]
         public string Color { get; set; }

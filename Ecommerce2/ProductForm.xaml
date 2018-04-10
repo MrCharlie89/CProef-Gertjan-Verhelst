@@ -7,7 +7,44 @@
              xmlns:local="clr-namespace:Syntra.VDOAP.CProef.Ecommerce2"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800" Background="White">
-    <Grid Height="522" Width="773">
-        <Label x:Name="Title" Content=" Add new product" Margin="0,0,653,491"></Label>
+    <Grid  Grid.IsSharedSizeScope="True" Margin="0,0,0,0" >
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <StackPanel Background="White" HorizontalAlignment="Center">
+                <Label x:Name="Title" Content=" Add new product" HorizontalAlignment="Center"/>
+
+                <WrapPanel Background="White" VerticalAlignment="Top" HorizontalAlignment="Center">
+                    <Grid HorizontalAlignment="Center">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel Grid.Column="0" HorizontalAlignment="Stretch">
+                            <Label x:Name="ProductName" Content="Product name: " HorizontalContentAlignment="Right" Height="30" Margin="0,5,0,5"/>
+                            <Label x:Name="ProductCategory" Content="Product category: " HorizontalContentAlignment="Right" Height="30" Margin="0,5,0,5"/>
+                            <Label x:Name="ProductDescription" Content="Product description: " HorizontalContentAlignment="Right" Height="90" Margin="0,5,0,5"/>
+                            <Label x:Name="ProductMaterial" Content="Material: " HorizontalContentAlignment="Right" Height="30" Margin="0,5,0,5"/>
+                            <Label x:Name="ProductColor" Content="Color: "  HorizontalContentAlignment="Right" Height="30" Margin="0,5,0,5"/>
+                            <Label x:Name="ProductPrice" Content="Unit price: " HorizontalContentAlignment="Right" Height="30" Margin="0,5,0,5"/>
+                            <Label x:Name="ProductStock" Content="current products in stock: " HorizontalContentAlignment="Right" Height="30" Margin="0,5,0,5"/>
+                            <Label x:Name="ProductBarcode" Content="Barcode: " HorizontalContentAlignment="Right" Height="30" Margin="0,5,0,5"/>
+                            <Label x:Name="ProductIsActive" Content="In product range: " HorizontalContentAlignment="Right" Height="30" Margin="0,5,0,5"/>
+                        </StackPanel>
+
+                        <StackPanel Grid.Column="1" HorizontalAlignment="Stretch">
+                            <TextBox HorizontalAlignment="Right" Width="200" Height="30" VerticalContentAlignment="Center" Margin="0,5,0,5"></TextBox>
+                            <ComboBox HorizontalAlignment="Right" Width="200" Height="30" VerticalContentAlignment="Center" Margin="0,5,0,5"></ComboBox>
+                            <TextBox HorizontalAlignment="Right" Width="200" Height="90" TextWrapping="Wrap" AcceptsReturn="True" Margin="0,5,0,5"></TextBox>
+                            <TextBox HorizontalAlignment="Right" Width="200" Height="30" VerticalContentAlignment="Center" Margin="0,5,0,5"></TextBox>
+                            <TextBox HorizontalAlignment="Right" Width="200" Height="30" VerticalContentAlignment="Center" Margin="0,5,0,5"></TextBox>
+                            <TextBox HorizontalAlignment="Right" Width="200" Height="30" VerticalContentAlignment="Center" Margin="0,5,0,5"></TextBox>
+                            <TextBox HorizontalAlignment="Right" Width="200" Height="30" VerticalContentAlignment="Center" Margin="0,5,0,5"></TextBox>
+                            <TextBox HorizontalAlignment="Right" Width="200" Height="30" VerticalContentAlignment="Center" Margin="0,5,0,5"></TextBox>
+                            <CheckBox HorizontalAlignment="Right" Width="200" Height="30" VerticalContentAlignment="Center" Margin="0,5,0,5"></CheckBox>
+                        </StackPanel>
+                    </Grid>
+                </WrapPanel>
+            </StackPanel>
+        </ScrollViewer>
     </Grid>
 </UserControl>
